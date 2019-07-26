@@ -50,3 +50,5 @@ sudo yum install jfrog-artifactory-oss
 systemctl start artifactory
 =========================
 yum install tomcat-webapps tomcat-admin-webapps
+====================
+manage jenkins-->configure system> artifactory section > http://13.127.237.204:8081/artifactory
