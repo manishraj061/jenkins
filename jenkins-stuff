@@ -39,3 +39,14 @@ export PATH
 https://bitbucket.org/tetranoodle/gradle_base/src/master/
 
 https://tetranoodle@bitbucket.org/tetranoodle/gradle_base.git
+============================================================
+Artifactory
+
+Installing Artifactory OSS from an RPM disribution
+wget https://bintray.com/jfrog/artifactory-rpms/rpm -O bintray-jfrog-artifactory-rpms.repo
+sudo mv bintray-jfrog-artifactory-rpms.repo /etc/yum.repos.d/
+sudo yum install jfrog-artifactory-oss
+
+systemctl start artifactory
+=========================
+yum install tomcat-webapps tomcat-admin-webapps
