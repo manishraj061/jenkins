@@ -57,3 +57,16 @@ systemctl start artifactory
 yum install tomcat-webapps tomcat-admin-webapps
 ====================
 manage jenkins-->configure system> artifactory section > http://13.127.237.204:8081/artifactory
+
+
+========================================
+maven goals
+deploy:deploy-file
+-Dfile=$WORKSPACE\global_cfgplan.xml
+-DrepositoryId=artifactory-libs-release
+-Durl=http://localhost:8081/artifactory/libs-release-local
+-DgroupId=com.accaglobal.soa.configfiles.soa
+-DartifactId=GlobalSOAConfigPlan
+-Dversion=${version_number}
+--activate-profiles artifactory
+================================
