@@ -70,3 +70,11 @@ deploy:deploy-file
 -Dversion=${version_number}
 --activate-profiles artifactory
 ================================
+Build 
+mvn package
+----
+plugin required
+artifactory plugin
+copy artifactory
+deploy war conatainer
+
